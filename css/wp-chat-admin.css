@@ -1,0 +1,133 @@
+.wp-chat-admin-wrap {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.wp-chat-admin-wrap h2 {
+    margin-top: 0;
+}
+
+.wp-chat-admin-wrap label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.wp-chat-admin-wrap input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.wp-chat-admin-wrap .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.wp-chat-admin-wrap .toggle:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.wp-chat-admin-wrap input[type="checkbox"]:checked + .toggle {
+    background-color: #2ecc71;
+}
+
+.wp-chat-admin-wrap input[type="checkbox"]:checked + .toggle:before {
+    left: calc(100% - 32px);
+}
+.wp-chat-admin-wrap input[type="checkbox"] {
+    display: none;
+}
+
+.wp-chat-admin-wrap .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.wp-chat-admin-wrap .toggle:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.wp-chat-admin-wrap input[type="checkbox"]:checked + .toggle {
+    background-color: #2ecc71;
+}
+
+.wp-chat-admin-wrap input[type="checkbox"]:checked + .toggle:before {
+    left: calc(100% - 32px);
+}
+.wp-chat-admin-wrap input[type="checkbox"] {
+    display: none;
+}
+
+.wp-chat-admin-wrap .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 17px;
+    cursor: pointer;
+    pointer-events: none; /* Disable pointer events */
+}
+
+.wp-chat-admin-wrap .toggle:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.wp-chat-admin-wrap input[type="checkbox"]:checked + .toggle {
+    background-color: #2ecc71;
+}
+
+.wp-chat-admin-wrap input[type="checkbox"]:checked + .toggle:before {
+    left: calc(100% - 32px);
+}
+.toggle .active{
+    background-color:#2ecc71'''
+}
+.toggle .active{
+    background-color:'#ccc';
+}
+
