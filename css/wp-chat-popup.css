@@ -1,0 +1,163 @@
+/* Chat popup container */
+#chat-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 360px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, visibility 0s linear 0.3s;
+}
+
+/* Chat header */
+#chat-header {
+    padding: 10px;
+    background-color: #2ae5b3;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 30px;
+}
+
+/* Chat title */
+#chat-title {
+    font-weight: bold;
+}
+
+
+/* Minimize icon */
+#minimize-icon {
+    cursor: pointer;
+    float: right; /* Float the minimize icon to the right */
+    margin-right: -10px; /* Adjust as needed for spacing */
+}
+
+/* Chat messages container */
+#chat-messages {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;    
+}
+
+/* Individual chat message */
+.message {
+    margin-bottom: 10px;
+    overflow: hidden;
+    clear: both;
+}
+
+/* Your message */
+.your-message {
+    float: right;
+    background-color: #dcf8c6;
+    color: #000;    
+    margin-top: 15px;
+    padding:10px;    
+    display: block;
+    word-wrap: break-word;
+}
+.hidden {
+    display: none;
+}
+
+/* AI message */
+.ai-message {
+    float: left;
+    background-color: #abe0c7;
+    color: #000;    
+    margin-top: 15px;
+    padding:10px;
+    
+    display: block;
+    word-wrap: break-word;
+}
+
+/* Message content */
+.message .content {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 15px;
+}
+
+
+/* Message input */
+#message-input {
+    width: calc(100% - 80px);
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Send button */
+#send-button {
+    width: 60px;
+    margin: 10px;
+    padding: 8px;
+    background-color: #2ae5b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Send button hover */
+#send-button:hover {
+    background-color: #0056b3;
+}
+#message {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;    
+    width:100%;
+    padding-right: 30px;
+}
+#loader {
+    display: none;
+    top: 10px;
+    right: 10px;
+    margin: 8px;;
+    padding: 6px;
+    color: #121111;
+    border-radius: 5px;
+    text-align: left;
+    background-image: url(./img/loader.gif);
+    background-size: 69px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#chat-popup.minimized {
+    transform: translateY(calc(100% - 50px)); /* Adjust this value to show the header */
+    visibility: hidden;
+}
+.minimized-header {
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Ensure full width */
+}
+#chat-form {
+    position: relative;
+}
+#clear-storage-btn {
+    position: absolute;
+    top: 50%;
+    right: 45px; /* Adjust as needed */
+    transform: translateY(-50%);
+    width: 22px;
+    height: 20px;
+    background-image:  url(./img/refresh.png);/* URL to your refresh button image */
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
