@@ -1,6 +1,5 @@
 === AI Chat Assistant ===
 Contributors: Anto Mathew
-Donate link: https://david.dw-perspective.org.uk/donate
 Tags: chat, AI, chatgpt, chat with website
 Requires PHP: 5.6
 Requires at least: 5.0
